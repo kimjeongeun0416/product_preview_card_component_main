@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    margin: 1em;
+    border-radius: 1em;
+    max-width: 700px;
+    
+  }
+  .img {
+    width: 100%;
+    border-radius: 1em 0 0 1em;
+    overflow: hidden;
+  }
+  .d-img {
+    width: 100%;
+    height: 100%;
+  }
+  .m-img {
+    display: none;
+  }
+  .info {
+    width: 100%;
+    padding: 2em;
+  }
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5em;
+    font-size: 12px;
+  }
+
+  .info h1 {
+    color :hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    line-height: 1em;
+    padding: 0.5em 0;
+  }
+
+  .info p {
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0.3em 0;
+    line-height: 1.6em;
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin: 1em 0;
+  }
+
+  .sale_price {
+    color: #4F7F6A;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin-right: 15px;
+  }
+
+  .ori_price {
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    font-size: 15px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    background-color: #4F7F6A;
+    color: #fff;
+    border-radius: 0.2em;
+  }
+
+  .button img {
+    width: 15px;
+  }
+  .button .btn {
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  .attribution { 
+    position: fixed;
+    bottom: 1em;
+    font-size: 11px; 
+    text-align: center;
+  }
+  .attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media screen and (max-width: 600px) { 
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100%;
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .d-img {
+        display: none;
+    }
+
+    .m-img {
+        display: inline;
+        width: 100%;
+    }
+ }
